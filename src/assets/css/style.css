@@ -7,68 +7,34 @@
   margin-top: 200px;
 }
 
+.second-style {
+  width: 60%;
+}
+
 .quiz-style {
-  width: 50%;
-  margin-top: 200px;
-}
-
-.score-style {
   width: 40%;
-  height: 800px;
-  margin-top: 100px;
-  padding: 28px;
-}
-
-.score-font-style {
-  font-size: 48px;
-}
-
-.list-style {
-  width: 90%;
-}
-
-.setting-input-style {
-  width: 100%;
-  margin: 10px;
-}
-
-.w-320px {
-  width: 320px;
 }
 
 @media only screen and (max-width: 375px) {
-  .setting-input-style {
-    display: flex;
-    flex-direction: column;
-  }
-  .list-style {
-    width: 100%;
-  }
-  .score-font-style {
-    font-size: 30px;
-  }
-  .score-style {
-    width: 100%;
-    height: 650px;
-    margin-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .text-style {
-    font-size: 30px;
-  }
   .first-style {
     width: 100%;
     margin: 10px;
     margin-top: 100px;
   }
+  .second-style {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .quiz-style {
     width: 100%;
-    margin-top: 50px;
+  }
+  .text-style {
+    font-size: 30px;
   }
 }
 
-.customradio {
+.custom-radio {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -82,14 +48,14 @@
 }
 
 /* Hide the browser's default radio button */
-.customradio input {
+.custom-radio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
 /* Create a custom radio button */
-.checkmark {
+.check-mark {
   position: absolute;
   top: 0;
   left: 0;
@@ -100,29 +66,29 @@
 }
 
 /* On mouse-over, add a grey background color */
-.customradio:hover input ~ .checkmark {
+.custom-radio:hover input ~ .check-mark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.customradio input:checked ~ .checkmark {
+.custom-radio input:checked ~ .check-mark {
   background-color: #2196f3;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
+.check-mark:after {
   content: '';
   position: absolute;
   display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.customradio input:checked ~ .checkmark:after {
+.custom-radio input:checked ~ .check-mark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.customradio .checkmark:after {
+.custom-radio .check-mark:after {
   top: 9px;
   left: 9px;
   width: 8px;
